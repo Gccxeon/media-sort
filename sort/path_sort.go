@@ -31,7 +31,7 @@ type Result struct {
 }
 
 var (
-	DefaultTVTemplate = `{{ .Name }} S{{ printf "%02d" .Season }}E{{ printf "%02d" .Episode }}` +
+	DefaultTVTemplate = `{{ .Name }}/S{{ printf "%02d" .Season }}/E{{ printf "%02d" .Episode }}` +
 		`{{ if ne .ExtraEpisode -1 }}-{{ printf "%02d" .ExtraEpisode }}{{end}}.{{ .Ext }}`
 	DefaultMovieTemplate = "{{ .Name }} ({{ .Year }}).{{ .Ext }}"
 )
